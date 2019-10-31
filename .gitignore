@@ -1,0 +1,9 @@
+.catkin_workspace
+.catkin_tools
+build/
+devel/
+logs/
+.catkin_tools/
+imageMetaData/
+imageFolder/
+*.pyc

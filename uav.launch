@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find dji_sdk)/launch/sdk.launch"/>
+    <include file="$(find dji_gimbal_cam)/launch/load_rosparam.launch"/>
+    <node pkg="camera_node" type="camera_node_node" name="camera_node_node" output="screen"></node>
+    <include file="$(find reach_ros_node)/launch/reach_sureclean.launch"/>
+</launch>

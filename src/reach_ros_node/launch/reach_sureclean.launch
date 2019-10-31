@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="reach_ros_node" name="reach_node" type="nmea_tcp_driver" output="log">
+        <param name="host" value="192.168.0.101"/>
+        <param name="port" value="9001"/>
+        <param name="use_rostime" value="true"/>
+        <param name="frame_gps" value="base_link"/>
+	<remap from="/tcpfix" to="rtk_gps"/>
+    </node>
+</launch>
